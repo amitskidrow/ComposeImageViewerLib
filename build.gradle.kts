@@ -1,11 +1,12 @@
 buildscript {
-//    repositories {
-//        google()
-//        jcenter()
-//        mavenCentral()
-//        mavenLocal()
-//        maven(url = "https://maven.google.com/")
-//    }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+        maven(url = "https://maven.google.com/")
+        maven(url = "https://jitpack.io")
+    }
 //    dependencies {
 //        // NOTE: Do not place your application dependencies here; they belong
 //        classpath("com.android.tools.build:gradle:7.3.0-alpha09")

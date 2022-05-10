@@ -44,13 +44,13 @@ import coil.compose.rememberImagePainter
 import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.size.Scale
-import com.google.accompanist.pager.ExperimentalPagerApi
-import com.google.accompanist.pager.HorizontalPager
-import com.google.accompanist.pager.rememberPagerState
-import com.whatsapp.composeimageviewer.R
+import com.cirline.composeimageviewer.R
 import com.cirline.imageviewer.bytesToSize
 import com.cirline.imageviewer.data.StatusDataModelHelper
 import com.cirline.imageviewer.data.WhatsAppFile
+import com.google.accompanist.pager.ExperimentalPagerApi
+import com.google.accompanist.pager.HorizontalPager
+import com.google.accompanist.pager.rememberPagerState
 
 @OptIn(ExperimentalComposeUiApi::class, ExperimentalPagerApi::class)
 @Composable
@@ -242,7 +242,7 @@ private fun CoilImageViewComposable(
             painter = painter,
             contentDescription = null,
             contentScale = ContentScale.Inside,
-            modifier =  Modifier
+            modifier = Modifier
                 .align(alignment = Alignment.Center)
                 .graphicsLayer(
                     // adding some zoom limits (min 50%, max 200%)

@@ -74,6 +74,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    lintOptions {
+        isAbortOnError = false
+    }
 }
 
 dependencies {
@@ -89,4 +92,5 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Config.composeVersion}")
     debugImplementation("androidx.compose.ui:ui-tooling:${Config.composeVersion}")
     debugImplementation("androidx.compose.ui:ui-test-manifest:${Config.composeVersion}")
+//    implementation("com.github.amitskidrow:ComposeImageViewerLib:1.0")
 }

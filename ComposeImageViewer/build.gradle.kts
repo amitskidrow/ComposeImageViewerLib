@@ -59,6 +59,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    lintOptions {
+        isAbortOnError = false
+    }
 }
 
 dependencies {
